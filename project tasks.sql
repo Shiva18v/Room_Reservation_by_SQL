@@ -29,7 +29,7 @@ JOIN  guests g ON res.guest_id = g.guest_id
 JOIN room r ON res.room_id = r.room_id
 WHERE res.guest_id = 9; 
 
-/* List all rooms that are currently occupied (check-in date is before or equal to today, 
+/*Â List all rooms that are currently occupied (check-in date is before or equal to today, 
 and check-out date is after today).*/
 
 SELECT
@@ -494,42 +494,6 @@ DECLARE @GuestToCheck INT = 10;
 
 -- Execute the stored procedure
 EXEC @Result = sp_GetGuestDetails @GuestID = @GuestToCheck;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
-
-
 
 
 
